@@ -2,8 +2,10 @@
     padding-top: 16.4rem;
     padding-bottom: 10.3rem;
     background-image: url("../assets/bg-hero.jpg");
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    
     height: 80rem;
     .container{
         display: flex;
@@ -49,6 +51,7 @@
 
             }
         }
+       
     }
     .right{
         position: relative;
@@ -93,6 +96,99 @@
             }
         }
     }
+    @media (max-width: 1440px) {
+        background-image: url("../assets/bg-hero-1440.jpg");
+        .left{
+            h1{
+                
+                font-size: 12rem;
+                line-height: 97.5%;
+            }
+            p{
+                
+                font-size: 1.8rem;
+                line-height: 140%;
+            }
+        }
+    }
+    @media(max-width:1200px) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        height: auto;
+        background-position-x: 30%;
+        .left{
+            max-width: 64rem;
+            p{
+              font-size: 1.8rem;  
+            }
+        }
+        .right{
+            top: 0;
+            max-width: 35.3rem;
+            button{
+                height: 19.7rem;
+            }
+        }
+
+    }
+    @media(max-width:991px) {
+        padding: 6rem 0;
+        background-size: cover;
+        .container{
+            flex-direction: column;
+            align-items: center;
+        }
+        .left{
+            text-align: center;
+            margin-bottom: 4rem;
+            .value{
+                justify-content: center;
+            }
+        }
+        .right{
+            text-align: center;
+            button{
+                margin-bottom: 3rem;
+            }
+            .year-old{
+                flex-direction: column;
+                p{
+                    margin: 0;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+    @media (max-width: 560px) {
+        padding: 4rem 0;
+        .left{
+            h1{
+                font-size: 6rem;
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            p{
+                font-size: 1.4rem;
+                max-width: 80%;
+                margin: 0 auto;
+                margin-bottom: 3rem;
+            }
+            .value{
+                flex-direction: column;
+            }
+        }
+        .right{
+            max-width: 31rem;
+            button{
+                height: 17.7rem;
+            }
+            .year-old{
+                p{
+                    line-height: 2.4rem;
+                }
+            }
+        }
+    }
 }
 .s-info-geral{
     width: 100%;
@@ -118,5 +214,224 @@
             }
         }
     }
+    @media (max-width:1200px) {
+        padding: 4rem 0;
+        height: auto;
+        ul{
+            flex-wrap: wrap;
+            gap: 3rem 0 ;
+            li{
+                width: 33.3%;
+            }
+        }
+    }
+    @media (max-width:560px) {
+        ul{
+            li{
+                width: 50%;
+                span{
+                    max-width: 14.5rem;
+                }
+            }
+        }
+        
+    }
+}
 
+.s-story{
+    width: 100%;
+    padding-top: 16rem;
+    padding-bottom: 8rem;
+    background-image: url(../assets/bg-story.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+    .container{
+        display: flex;
+        align-items: center;
+
+    }
+    .left{
+        width: 100%;
+        max-width: 62.9rem;
+
+        h2{
+            margin-top: 2.8rem;
+            margin-bottom: 2.4rem;
+            max-width: 50.2rem;
+        }
+        p{
+            margin-bottom: 5.6rem;
+        }
+        .corp{
+            display: flex;
+            align-items: center;
+            p{
+                margin-bottom: 0;
+                margin-left: 4.6rem;
+                max-width: 32.4rem;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 160%;
+               
+                
+                
+                color: #FFFFFF;
+            }
+        }
+    }
+    .kratos-atreus{
+        position: relative;
+        left: 3rem;
+        top: 1.5rem;
+    }
+    @media (max-width:1440px) {
+        width: 100%;
+        background-image: url(../assets/bg-story1440.jpg);
+        background-position-x: -12px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-position: top center;
+        .kratos-atreus{
+            
+            width: 196rem;
+            left: 11rem;
+            top: 1.3rem;
+        }
+        
+    }
+    @media (max-width:1200px) {
+        background-image: none;
+        padding: 6rem 0;
+        .container{
+            flex-direction: column-reverse;
+        }
+        .left{
+            max-width: 100%;
+            text-align: center;
+            .subtitle{
+                justify-content: center;
+            }
+            h2{
+                margin: 2rem auto;
+                max-width: 75%;
+            }
+            .corp{
+                justify-content: center;
+            }
+        }
+        .kratos-atreus{
+            left: 0;
+            top: 0;
+            margin-bottom: 6rem;
+        }
+    }
+    @media (max-width:991px){
+        .left{
+            h2{
+                max-width: 95%;
+            }
+        }
+    }
+    @media (max-width:560px){
+        .left{
+            h2{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.6rem;
+                margin-bottom: 4rem;
+            }
+            .corp{
+                flex-direction: column;
+                p{
+                    margin-left: 0;
+                margin-top: 3rem;
+                }
+            }
+        }
+        .kratos-atreus{
+            margin-bottom: 4rem;
+        }
+    }
+
+}
+
+.s-characters{
+    padding-top: 17.6rem;
+    padding-bottom: 14.3rem;
+    background-image: url(../assets/bg-characters.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    .description{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .left{
+            width: 100%;
+            max-width: 61.2rem;
+            h2{
+                margin-top: 2.8rem;
+                margin-bottom: 2.4rem;
+            }
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            .text{
+                span{
+                    display: block;
+                    font-weight: 500;
+                    font-size: 1.8rem;
+                    line-height: 140%;
+                    max-width: 14.3rem;
+                    margin-top: 2.2rem;
+                }
+            }
+        }
+    }
+    @media (max-width:1200px) {
+        padding: 6rem 0;
+    }
+    @media (max-width:991px) {
+        .description{
+            flex-direction: column;
+            align-items: center;
+            .left{
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+    @media (max-width:560px) {
+        padding: 4rem 0;
+        .description{
+            .left{
+                h2{
+                    font-size: 3rem;
+                }
+                p{
+                   font-size:  1.6rem;
+                }
+            }
+            .right{
+                flex-direction: column;
+                align-items: center;
+                .text{
+                    img{
+                        margin: 0 auto;
+                    }
+                    span{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .slide-characters{
+        margin-top: 4rem;
+    }
 }

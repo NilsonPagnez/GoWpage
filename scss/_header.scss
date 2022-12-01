@@ -14,8 +14,9 @@ header{
         align-items: center;
         span{
             font-weight: 600;
-            font-size: 1.4rem;
-            line-height: 1.5rem;
+            font-size: 1.6rem;
+            line-height: 1.7rem;
+
         }
         ul{
             display: flex;
@@ -29,6 +30,22 @@ header{
                 line-height: 1.5rem;
             }
             
+        }
+    }
+
+  
+    @media(max-width: 560px) {
+        height: 7rem;
+        .sony{
+            display: none;
+        }
+        .logo{
+            max-width: 14rem;
+        }
+        .platform{
+            span{
+                display: none;
+            }
         }
     }
 }
